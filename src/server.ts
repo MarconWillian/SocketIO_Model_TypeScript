@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import express from 'express';
 import cors from 'cors';
 import { Server } from 'http';
@@ -13,18 +14,10 @@ const http = new Server(app);
 
 const portOfApplication = 3000;
 
-socker(http, Redis);
+socker(http);
 
 app.get('/', (req: any, res: any) => {
-  res.sendFile(path.resolve('./static/index.html'));
-});
-
-app.get('/store', (req: any, res: any) => {
-  res.sendFile(path.resolve('./static/store.html'));
-});
-
-app.get('/print', (req: any, res: any) => {
-  res.sendFile(path.resolve('./static/print.html'));
+  res.sendFile(path.resolve('./static/client.html'));
 });
 
 export default async (): Promise<void> => {
