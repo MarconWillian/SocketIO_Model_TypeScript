@@ -1,0 +1,7 @@
+{
+  "name": "SocketIO_Model_TypeScript",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Marcon Willian Oliveira Neves <oi@marconwillian.dev>",
+  "license": "MIT"
+}
